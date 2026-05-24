@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: linear-gradient(135deg, #eaf4ff 0%, #fdfdfd 100%);
+
+    color: #2c3e50;
+
+    min-height: 100vh;
+
+    padding: 40px 20px;
+}
+
+.container {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.main-title {
+    font-size: 48px;
+    font-weight: bold;
+
+    margin-bottom: 10px;
+
+    color: #1f2d3d;
+
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 18px;
+
+    color: #667;
+
+    margin-bottom: 35px;
+
+    text-align: center;
+}
+
+.home-card,
+form,
+.dashboard-container {
+    background: white;
+
+    width: 100%;
+    max-width: 650px;
+
+    padding: 35px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.buttons a {
+    width: 100%;
+}
+
+input,
+textarea,
+button {
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 6px;
+
+    border-radius: 10px;
+
+    border: 1px solid #dcdfe6;
+
+    font-size: 16px;
+
+    transition: 0.2s ease;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+
+    border-color: #3498db;
+
+    box-shadow: 0 0 8px rgba(52,152,219,0.3);
+}
+
+button {
+    background: #3498db;
+
+    color: white;
+
+    border: none;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #2980b9;
+
+    transform: translateY(-1px);
+}
+
+.register-btn {
+    background: #2ecc71;
+}
+
+.register-btn:hover {
+    background: #27ae60;
+}
+
+.secondary-btn {
+    background: #7f8c8d;
+}
+
+.secondary-btn:hover {
+    background: #636e72;
+}
+
+a {
+    text-decoration: none;
+}
+
+.back-btn {
+    display: inline-block;
+
+    background: #636e72;
+
+    color: white;
+
+    padding: 12px 20px;
+
+    border-radius: 10px;
+
+    margin-bottom: 20px;
+
+    transition: 0.3s ease;
+}
+
+.back-btn:hover {
+    background: #2d3436;
+}
+
+.dashboard-wrapper {
+    width: 100%;
+
+    max-width: 800px;
+
+    margin: 0 auto;
+}
+
+.dashboard-title {
+    font-size: 36px;
+
+    margin-bottom: 25px;
+
+    text-align: center;
+}
+
+.event-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.event-card {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 16px;
+
+    border-left: 6px solid #3498db;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+
+    transition: 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.event-title {
+    font-size: 24px;
+
+    margin-bottom: 12px;
+
+    color: #2c3e50;
+}
+
+.event-description {
+    margin-bottom: 15px;
+
+    line-height: 1.6;
+
+    color: #555;
+}
+
+.event-date,
+.event-reminder {
+    margin-top: 8px;
+
+    color: #444;
+
+    font-size: 15px;
+}
+
+.dashboard-actions {
+    margin-top: 35px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.dashboard-actions a {
+    width: 100%;
+}
+
+.dashboard-actions button {
+    width: 100%;
+}
+
+.logout-form {
+    position: fixed;
+
+    top: 20px;
+    left: 20px;
+
+    width: auto;
+    max-width: none;
+
+    padding: 0;
+    margin: 0;
+
+    background: transparent;
+
+    box-shadow: none;
+
+    border-radius: 0;
+}
+
+.logout-btn {
+    background: #e74c3c;
+
+    border: none;
+
+    color: white;
+
+    padding: 12px 18px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    width: auto;
+
+    transition: 0.3s ease;
+}
+
+.logout-btn:hover {
+    background: #c0392b;
+}
+
+.empty-message {
+    text-align: center;
+
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 20px 15px;
+    }
+
+    .main-title {
+        font-size: 36px;
+    }
+
+    .dashboard-title {
+        font-size: 30px;
+    }
+
+    .home-card,
+    form,
+    .dashboard-container {
+        padding: 25px;
+    }
+}
